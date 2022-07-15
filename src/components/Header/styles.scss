@@ -1,0 +1,20 @@
+@import "../../styles/utilities.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: $firstColor;
+  height: 64px;
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+
+    .logo {
+      height: 45px;
+      width: 66px;
+    }
+  }
+}

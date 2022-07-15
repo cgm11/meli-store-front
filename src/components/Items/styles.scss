@@ -1,0 +1,58 @@
+@import '../../styles/utilities.scss';
+@import '../../styles/base';
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundColor;
+    padding-bottom: 52px;
+    min-height: 88vh;
+    .loading {
+        font-size: $giant;
+    }
+    .itemsContainer {     
+        max-width: 1168px;  
+        padding: $normal;
+    }
+    .item {
+        display: flex;        
+        .productImage {
+            width: 180px;
+            height: 180px;
+            margin: 0px $normal $normal 0px;
+            border-radius: 4px;
+        }        
+        .itemData {
+            max-width: 500px;
+            .priceContainer {
+                display: flex;
+                align-items: baseline;
+                .price {
+                    font-size: $doubleBig;
+                    margin-bottom: $huge;
+                    margin-right: $tiny;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }            
+            .title {
+                font-size: $big;
+            }
+        }
+        
+    }
+    .item:not(:last-child) {
+        border-bottom: 1px solid $backgroundColor;
+    }
+    .item:not(:first-child) {
+        margin-top: $normal;
+    }
+    .emptyItems {
+        font-size: $doubleBig;
+        text-align: center;
+        margin: 40px;
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../styles/utilities.scss";
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  ul {
+    margin: 16px 0px;
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+        color: $fourthColor;
+        font-size: $small;
+      }
+    }
+    /* Put > between list items */
+    li + li:before {
+      content: ">";
+      padding: 10px;
+      color: $fourthColor;
+      font-size: $small;
+    }
+    li:last-child a {
+      color: $thirdColor;
+      font-weight: 600;
+    }
+  }
+}

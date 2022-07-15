@@ -1,0 +1,48 @@
+@import "../../styles/utilities.scss";
+@import "../../styles/base";
+
+.itemContainer {
+  max-width: 1136px;
+  padding: $huge;
+
+  .infoItemContainer {
+    display: flex;
+    .itemDetailImg {
+      max-width: 680px;
+      width: 100%;
+      height: auto;
+    }
+    .detailsContainer {
+      margin-left: 60px;
+      .itemDetailCondition {
+        font-size: $small;
+        color: $secondColor;
+      }
+      .itemDetailTitle {
+        font-size: $doubleBig;
+        margin-top: $normal;
+        color: $secondColor;
+      }
+      .itemDetailPrice {
+        font-size: $giant;
+        margin: $huge 0px;
+        color: $secondColor;
+      }
+    }
+  }
+  .descriptionContainer {
+    max-width: 750px;
+    width: 100%;
+
+    .titleDescription {
+      font-size: $tripleBig;
+      font-weight: 400;
+      color: $secondColor;
+    }
+    .description {
+      font-size: $normal;
+      margin-top: $huge;
+      color: $fourthColor;
+    }
+  }
+}
